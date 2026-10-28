@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>实验二：三维企鹅与几何变换</title><link rel="stylesheet" href="../shared/style.css"></head>
+<body><main><h1>实验二：三维企鹅与几何变换</h1><nav><a href="../index.html">实验首页</a><a href="../experiment1/index.html">切换到实验1</a></nav>
+<div class="toolbar"><label>鼠标菜单 <select id="mode"><option value="ball">虚拟跟踪球</option><option value="whole">整体平移</option><option value="part">部件平移</option></select></label><label>屏幕旋转轴 <select id="axis"><option value="x">X 轴</option><option value="y">Y 轴</option><option value="z">Z 轴</option></select></label><button id="jump">跳跃（空格）</button><button id="reset">重置</button></div>
+<p class="hint">默认拖动鼠标使用虚拟跟踪球查看企鹅。嘴朝向本地 +Z；屏幕 X 向右、Y 向上、Z 朝向观察者。</p><canvas id="canvas" tabindex="0" aria-label="实验二：三维企鹅与几何变换交互画布"></canvas><p id="status" class="status" role="status"></p>
+<table><thead><tr><th>操作</th><th>效果</th></tr></thead><tbody><tr><td>W / S</td><td>沿动物当前头部朝向前进 / 后退（本地 +Z / −Z）</td></tr><tr><td>A / D；I / K；J / L</td><td>物体坐标：转向（Y）、俯仰（X）、翻滚（Z）</td></tr><tr><td>方向键 ↑ ↓ ← →</td><td>沿屏幕上、下、左、右平移</td></tr><tr><td>U / O</td><td>绕菜单选定的屏幕 X / Y / Z 轴正向 / 反向旋转</td></tr><tr><td>鼠标菜单</td><td>虚拟跟踪球旋转 / 整体平移 / 部件平移</td></tr><tr><td>空格</td><td>沿屏幕上方跳跃，保留实验一功能</td></tr></tbody></table>
+<p class="hint">先点击画布再使用键盘。重置会恢复全部位置和菜单选项。</p></main>
+<script src="../shared/math.js"></script><script src="../shared/renderer.js"></script><script src="../shared/animal.js"></script><script src="app.js"></script></body></html>

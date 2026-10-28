@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>实验一：二维企鹅（精简版）</title><link rel="stylesheet" href="../shared/style.css"></head>
+<body><main><h1>实验一：二维企鹅（精简版）</h1><nav><a href="../index.html">实验首页</a><a href="../experiment2/index.html">切换到实验2</a></nav>
+<div class="toolbar"><label>选择菜单 <select id="mode"><option value="whole">整体拖动</option><option value="part">部件拖动</option></select></label><button id="jump">跳跃（空格）</button><button id="reset">重置</button></div>
+<p class="hint">鼠标点击企鹅并拖动；部件模式可单独拖动翅膀、脚、眼睛等。</p><canvas id="canvas" tabindex="0" aria-label="实验一：二维企鹅（精简版）交互画布"></canvas><p id="status" class="status" role="status"></p>
+<table><thead><tr><th>操作</th><th>效果</th></tr></thead><tbody><tr><td>A / D 或 ← / →</td><td>后退 / 前进（屏幕向左 / 向右）</td></tr><tr><td>空格</td><td>跳跃并自动落回原位</td></tr><tr><td>选择菜单</td><td>切换整体拖动与部件拖动</td></tr></tbody></table>
+<p class="hint">先点击画布再使用键盘。重置会恢复全部位置和菜单选项。</p></main>
+<script src="../shared/math.js"></script><script src="../shared/renderer.js"></script><script src="../shared/animal.js"></script><script src="app.js"></script></body></html>
